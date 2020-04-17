@@ -25,10 +25,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+It allows you to create variables and code that you can re use over and over again without having to maybe write down the specifics. It also allows you to make changes without having to re-write your code, you can just change the variables and it will automatically update the entire code. Preprocessing also makes you code easier to read with nesting, it also makes it a lot smaller, since you won't have to re-write things. 
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+ My favorite is the ability to nest it makes things so much easier also mixins, what gives me the most trouble is probably accesibility, or media queries. 
+
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variable is just like you learned in math it is something that can be given value to. For example the Pythagorean Theorem a^2+b^2=c^2 we know that each letter is a variable to a side of a triangle and the legth of the triangle is then measured and put into a or b or c therefore giving the variable a value. 
+
+
 4. What is the purpose of using functions in code?
+ Functions allows the developer to repeat sections of code with just a single line, its like a mini program. For example a For loop. instead of me writing console log of something 100 times, I can just write a for loop with a limit of a 100 and with a single line it will repeat itself 100 times. 
+
+
 5. What is a JSON data?
+
+Json stands for JavaScript Object Notation, it is a lightwheight format of data that is eady to read and write for humans as well as machines. Its what we use to write JavaScript with. 
+
+
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -40,17 +57,17 @@ Follow these steps to set up your project:
 
 #### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x ] Create a forked copy of this project.
+- [x ] Add your Team Lead as collaborator on Github.
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 #### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ x] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ x] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
+* [x ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ### Task 2a:  Minimum Viable Product - PreProcessing
 
@@ -59,27 +76,27 @@ Follow these steps to set up your project:
 * [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
-1.variables.less
-2.mixins.less
-3.reset.less
-4.general.less
-5.navigation.less
-6.main.less
-7.cta.less
+    1.variables.less
+    2.mixins.less
+    3.reset.less
+    4.general.less
+    5.navigation.less
+    6.main.less
+    7.cta.less
 ```
 
 _You will know everything is working properly when you see the styles enabled for the provided content._  
 
 #### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
-* [ ] Add a viewport meta tag to the head of your index.html page
-* [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
-* [ ] Main Content Styles: Use the `main.less` file for styling
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
-* [ ] Use at least 2 parameters to create your button
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [X] Add a viewport meta tag to the head of your index.html page
+* [X] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] Navigation Styles: Use the `navigation.less` file for styling.
+* [ !] Main Content Styles: Use the `main.less` file for styling
+* [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+* [X ] Use at least 2 parameters to create your button
 * [ ] Create a hover state that changes the opacity of images to 80%
 * [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
 
