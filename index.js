@@ -279,7 +279,7 @@ function removeArtist(artist2, id) {
 //   }
 // return twentyCent 
 
-}
+
 
 // console.log(get20s(artists,1900, 2000))
 
@@ -311,12 +311,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(info){
 
-    /* Code here */
+  artists.push(info);
+ }
 
-  }
+addArtist([ {"id": 21,
+  "name": "Matias Iturbide", 
+  "years": "1990- 2020",
+  "genre": "Web Design, Game Design",
+  "nationality": "Argentina",
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}])
 
+  // console.log(artists[20])
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
