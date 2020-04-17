@@ -92,6 +92,9 @@ video {
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: 'Raleway', sans-serif;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -119,4 +122,45 @@ nav #about {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../assets/home.png");
+  background-size: cover;
+  height: 70vh;
+  margin: 0 15%;
+}
+.title-container h1 {
+  font-size: 6.5rem;
+  text-align: center;
+  color: white;
+}
+.title-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1%;
+  width: 16%;
+  height: 40px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 5px 2px dimgray;
+}
+.artists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  padding: 5% 20%;
+  margin: 5%;
+}
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+}
+.artists-container .artist img {
+  width: 40%;
+  height: 50%;
 }

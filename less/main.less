@@ -1,6 +1,46 @@
 // Main title intro/contact us button
 
 .title-container {
-    .flex(column, center, center)
-    background-image: url('../assets/home.png')
+    .flex(column, center, center);
+
+    background-image: url("../assets/home.png");
+    background-size: cover;
+    height: 70vh;
+    margin: 0 15%;
+
+    h1 {
+        font-size: 6.5rem;
+        text-align: center;
+        color: @titlefontcolor;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 1%;
+        .button( 16%, 40px, 5px, @buttoncolor, @backgroundcolor);
+        box-shadow: 0 0 5px 2px dimgray;
+    }
+}
+
+.artists-container {
+    .flex( row, space-around, center);
+    width: 95%;
+    padding: 5% 20%;
+    margin: 5%;
+
+
+    .artist {
+        .flex(column,space-around, center);
+        width: 50%;
+        height: 500px;
+
+        img {
+            width: 40%;
+            height: 50%;
+        }
+    }
+
+    
+    
 }
