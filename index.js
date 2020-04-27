@@ -262,23 +262,23 @@ function removeArtist(artist2, id) {
   /**
 
 
-/* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
+/* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 19th century (1800-1899) */
 
-// NEED TO FINISH NOT DONE
-// function get20s(artists,birth ){
 
-//   const twentyCent = [];
+function get20s(artists){
 
-//   for (let i=0; i<artists.length; i++) {
-//     if (birth <= artists[i].years) {
-//     twentyCent.push(artists[i].name);
-//     // } else if ( death >= artists[i].years ) {
-//     // twentyCent.push(artists[i].name);
-//     // 
-//     }
-//   }
-// return twentyCent 
+  const twentyCent = [];
 
+  for (let i=0; i<artists.length; i++) {
+    
+   
+    if (  <= artists[i].years) {
+    twentyCent.push(artists[i].name);    
+    }
+  }
+
+  return twentyCent 
+}
 
 
 // console.log(get20s(artists,1900, 2000))
@@ -327,12 +327,19 @@ addArtist([ {"id": 21,
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */){
+let artistName = '';
 
-    /* Code here */
+function checkArtist(artistName){
 
+  for(let i= 0; i<=artists.length; i++ ){
+    if (artistName === artists[i].name){
+      return `Artist ${artistName} found`;
+    }
   }
+}
 
+
+// console.log(checkArtist('Francisco Goya'))
 
 
 
