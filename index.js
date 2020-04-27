@@ -251,12 +251,11 @@ let artist2 = [...artists];
 
 function removeArtist(artist2, id) {
   for (let i = 0; i < artist2.length; i++){
-    if (id === artist2[i].id) {
      artist2.splice(id,1) 
     }
   }
    
-  }
+  
   // removeArtist(artist2, 0)
   // console.log(artist2)
   /**
@@ -265,23 +264,22 @@ function removeArtist(artist2, id) {
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 19th century (1800-1899) */
 
 
-function get20s(artists){
+// function get20s(artists){ 
 
-  const twentyCent = [];
+//   const twentyCent = [];
 
-  for (let i=0; i<artists.length; i++) {
-    
+//   for (let i=0; i<artists.length; i++) {
    
-    if (  <= artists[i].years) {
-    twentyCent.push(artists[i].name);    
-    }
-  }
+//     if (  ) {
+//     twentyCent.push(artists[i].name);    
+//     }
+//   }
 
-  return twentyCent 
-}
+//   return twentyCent 
+// }
 
 
-// console.log(get20s(artists,1900, 2000))
+console.log(get20s(artists))
 
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */

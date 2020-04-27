@@ -21,4 +21,22 @@ nav {
     #about {
         color: @navseccolor
     }
+    @media(max-width: 515px){
+        flex-direction: column;
+        align-items: center;
+        #home {
+            .borderleft;
+            padding: 1%;
+        }
+        #cont {
+            border: none;
+            padding: 1%;
+        }
+        #about{
+            padding: 1%;
+
+        }
+        
+    }
+
 }

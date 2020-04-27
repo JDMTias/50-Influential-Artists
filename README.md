@@ -93,11 +93,11 @@ _You will know everything is working properly when you see the styles enabled fo
 * [X] Add a viewport meta tag to the head of your index.html page
 * [X] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 * [X] Navigation Styles: Use the `navigation.less` file for styling.
-* [ !] Main Content Styles: Use the `main.less` file for styling
+* [ x] Main Content Styles: Use the `main.less` file for styling
 * [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 * [X ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
 * [X ] Use at least 2 parameters to create your button
-* [ ] Create a hover state that changes the opacity of images to 80%
+* [ X] Create a hover state that changes the opacity of images to 80%
 * [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
 
 ### Task 2b: Minimum Viable Product - JavaScript

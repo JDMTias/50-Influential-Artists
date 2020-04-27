@@ -5,7 +5,8 @@
 
     background-image: url("../assets/home.png");
     background-size: cover;
-    padding: 0 15%;
+    margin: 0 15%;
+    height: 70vh;
     
     h1 {
         font-size: 6.5rem;
@@ -21,14 +22,60 @@
         box-shadow: 0 0 5px 2px dimgray;
     }
 
+    @media(max-width: 515px){
+        height: auto;
+        h1{
+            font-size: 5rem;
+        }
+        h2{
+            width: 50%;
+            .button( 50%, 33px, 2px, @buttoncolor, @backgroundcolor);
+        }
+    }
 }
 
 .artists-container {
 
-    .bordertop;
+   .bordertop;
+   margin: 5%;
+   .flex( row, space-around, flex-start);
+   padding: 5%;
+   
+   .artist {
+    .flex( column, space-around, center);
+    width: 46%;
+    padding: 2%;
 
-    .flex( row, space-around, center);
-    
-    padding: 5%;
-    margin: 0;
+     img {
+        width: 100%;
+        background-size: cover;
+
+     }
+     a {
+        padding: 3%;
+        font-size: 2rem;
+     }
+     .bio {
+         font-size: 1.2rem;
+     }
+
+   }
+
+   @media(max-width: 515px){
+       flex-direction: column;
+       align-items: center;;
+       width: 100%;
+       margin: 0;
+       .artist{
+           width: 100%;
+           a {
+           font-size: 3rem;
+           text-align: center;
+            }
+            .bio {
+                font-size: 2rem;
+            }
+       }
+       
+   }
 }

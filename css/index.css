@@ -95,6 +95,9 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
 }
+body img:hover {
+  opacity: 80%;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -117,6 +120,23 @@ nav #cont {
 nav #about {
   color: darkgrey;
 }
+@media (max-width: 515px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav #home {
+    border-left: 1px solid black;
+    padding: 1%;
+  }
+  nav #cont {
+    border: none;
+    padding: 1%;
+  }
+  nav #about {
+    padding: 1%;
+  }
+}
 .title-container {
   display: flex;
   flex-direction: column;
@@ -124,8 +144,8 @@ nav #about {
   align-items: center;
   background-image: url("../assets/home.png");
   background-size: cover;
-  height: 70vh;
   margin: 0 15%;
+  height: 70vh;
 }
 .title-container h1 {
   font-size: 6.5rem;
@@ -143,24 +163,64 @@ nav #about {
   background-color: white;
   box-shadow: 0 0 5px 2px dimgray;
 }
+@media (max-width: 515px) {
+  .title-container {
+    height: auto;
+  }
+  .title-container h1 {
+    font-size: 5rem;
+  }
+  .title-container h2 {
+    width: 50%;
+    height: 33px;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+  }
+}
 .artists-container {
+  border-top: 2px dashed darkgrey;
+  margin: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  width: 95%;
-  padding: 5% 20%;
-  margin: 5%;
+  align-items: flex-start;
+  padding: 5%;
 }
 .artists-container .artist {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
-  height: 500px;
+  width: 46%;
+  padding: 2%;
 }
 .artists-container .artist img {
-  width: 40%;
-  height: 50%;
+  width: 100%;
+  background-size: cover;
+}
+.artists-container .artist a {
+  padding: 3%;
+  font-size: 2rem;
+}
+.artists-container .artist .bio {
+  font-size: 1.2rem;
+}
+@media (max-width: 515px) {
+  .artists-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  .artists-container .artist {
+    width: 100%;
+  }
+  .artists-container .artist a {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .artists-container .artist .bio {
+    font-size: 2rem;
+  }
 }
