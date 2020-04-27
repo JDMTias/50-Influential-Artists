@@ -209,13 +209,13 @@ const artists = [
 (2) Bio of the third artist in the array */
 
 artists[0].name
-artists[4].bio
+artists[2].bio
 
 // Console log to make sure they worked.
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-artists[10].name = 'Vincent Van Gogh'
+artists[8].name = 'Vincent Van Gogh'
 
 // console.log(artists[10].name)
 
@@ -229,10 +229,9 @@ artists[10].name = 'Vincent Van Gogh'
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(artists, id) {
-    for (let i = 0; i <artists.length; i++)
-    if (id === artists[i].id){
-      return `The artist at index ${artists[i].id} is ${artists[i].name}. `
-    }
+    // for (let i = 0; i <artists.length; i++) This line is not necessary 
+    // if (id === artists[i].id){ same here 
+      return `The artist at index ${id} is ${artists[id].name}.`
   }
   
   // console.log(getArtistByIndex( artists, 2))
@@ -250,9 +249,9 @@ function getArtistByIndex(artists, id) {
 let artist2 = [...artists];
 
 function removeArtist(artist2, id) {
-  for (let i = 0; i < artist2.length; i++){
+
      artist2.splice(id,1) 
-    }
+    
   }
    
   
@@ -264,19 +263,19 @@ function removeArtist(artist2, id) {
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 19th century (1800-1899) */
 
 
-// function get20s(artists){ 
+function get20s(artists){ 
 
-//   const twentyCent = [];
+  const twentyCent = [];
 
-//   for (let i=0; i<artists.length; i++) {
+  for (let i=0; i<artists.length; i++) {
    
-//     if (  ) {
-//     twentyCent.push(artists[i].name);    
-//     }
-//   }
+    if ( artists[i].years[1] === '8') {
+      twentyCent.push(artists[i].name);    
+    }
+  }
 
-//   return twentyCent 
-// }
+  return twentyCent 
+}
 
 
 console.log(get20s(artists))
@@ -289,7 +288,7 @@ function lotsOfArt(artists){
 const painters =[];
 
   for(let i = 0; i < artists.length; i++){
-    if ( 100 <= artists[i].paintings) {
+    if ( 100 < artists[i].paintings) {
       painters.push(artists[i].name);
     } 
   }
@@ -312,14 +311,14 @@ bio: Add 1-2 sentences (or use lorem ipsum) "*/
 function addArtist(info){
 
   artists.push(info);
- }
+}
 
-addArtist([ {"id": 21,
+addArtist( {"id": 21,
   "name": "Matias Iturbide", 
   "years": "1990- 2020",
   "genre": "Web Design, Game Design",
   "nationality": "Argentina",
-  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}])
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "})
 
   // console.log(artists[20])
 
